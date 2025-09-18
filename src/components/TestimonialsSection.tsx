@@ -3,13 +3,13 @@ import { Star } from "lucide-react";
 
 const reasons = [
     {
-        title: "Expert-Led Learning",
-        description: "Our courses are crafted by industry experts and top educators, ensuring you get the most relevant and up-to-date knowledge.",
+        title: "Structured Learning",
+        description: "The app turns scattered online searches into a clear journey aligned with the CGBSE syllabus, breaking chapters into micro-lessons with summaries, diagrams, and only the most relevant material.",
         icon: <Star className="w-8 h-8 fill-accent text-accent" />,
     },
     {
-        title: "Personalized Paths",
-        description: "We tailor your learning journey to your goals, making it easy to stay motivated and achieve success at your own pace.",
+        title: "syllabus-specific",    
+        description: "Every lesson is mapped directly to the CGBSE syllabus, ensuring students study only what truly matters for their exams.",
         icon: <Star className="w-8 h-8 fill-accent text-accent" />,
     },
     {
