@@ -1,8 +1,8 @@
 const stats = [
-  { number: "50K+", label: "Active Learners", description: "Students worldwide" },
-  { number: "1M+", label: "Lessons Completed", description: "Interactive sessions" },
-  { number: "95%", label: "Success Rate", description: "Course completion" },
-  { number: "4.9/5", label: "Rating", description: "User satisfaction" }
+  { number: "Built for Students, by student", label: "", description: "" },
+  { number: "Designed with the CGBSE syllabus at its core", label: "", description: "" },
+  { number: "Prototype today, future of learning tomorrow", label: "", description: "" },
+  { number: "our learning journey, reimagined", label: "", description: "" }
 ];
 
 const StatsSection = () => {
@@ -11,7 +11,7 @@ const StatsSection = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16 animate-gentle-fade">
           <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
-            Trusted by Learners{" "}
+            Querent.AI{" "}
             <span className="bg-gradient-to-r from-accent to-accent-glow bg-clip-text text-transparent">
               Worldwide
             </span>
