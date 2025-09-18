@@ -96,72 +96,48 @@ export default {
             height: "0",
           },
         },
-        "fade-in": {
+        "gentle-fade": {
+          "0%": {
+            opacity: "0"
+          },
+          "100%": {
+            opacity: "1"
+          }
+        },
+        "smooth-rise": {
           "0%": {
             opacity: "0",
-            transform: "translateY(20px)"
+            transform: "translateY(10px)"
           },
           "100%": {
             opacity: "1",
             transform: "translateY(0)"
           }
         },
-        "slide-in-left": {
+        "subtle-glow": {
           "0%": {
-            opacity: "0",
-            transform: "translateX(-50px)"
+            boxShadow: "0 0 20px hsl(var(--primary) / 0.2)"
           },
           "100%": {
-            opacity: "1",
-            transform: "translateX(0)"
+            boxShadow: "0 0 30px hsl(var(--primary-glow) / 0.4)"
           }
         },
-        "slide-in-right": {
-          "0%": {
-            opacity: "0",
-            transform: "translateX(50px)"
-          },
-          "100%": {
-            opacity: "1",
-            transform: "translateX(0)"
-          }
-        },
-        "scale-in": {
-          "0%": {
-            opacity: "0",
-            transform: "scale(0.95)"
-          },
-          "100%": {
-            opacity: "1",
-            transform: "scale(1)"
-          }
-        },
-        "glow": {
-          "0%": {
-            boxShadow: "0 0 20px hsl(var(--primary) / 0.3)"
-          },
-          "100%": {
-            boxShadow: "0 0 40px hsl(var(--primary-glow) / 0.6)"
-          }
-        },
-        "float": {
+        "pulse-soft": {
           "0%, 100%": {
-            transform: "translateY(0px)"
+            opacity: "1"
           },
           "50%": {
-            transform: "translateY(-10px)"
+            opacity: "0.8"
           }
         }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "fade-in": "fade-in 0.6s ease-out",
-        "slide-in-left": "slide-in-left 0.6s ease-out",
-        "slide-in-right": "slide-in-right 0.6s ease-out",
-        "scale-in": "scale-in 0.4s ease-out",
-        "glow": "glow 2s ease-in-out infinite alternate",
-        "float": "float 6s ease-in-out infinite",
+        "gentle-fade": "gentle-fade 0.8s ease-out",
+        "smooth-rise": "smooth-rise 0.6s ease-out",
+        "subtle-glow": "subtle-glow 3s ease-in-out infinite alternate",
+        "pulse-soft": "pulse-soft 4s ease-in-out infinite",
       },
     },
   },

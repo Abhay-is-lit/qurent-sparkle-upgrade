@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { useState, useEffect } from "react";
 
 const Navigation = () => {
@@ -15,9 +16,9 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? "bg-background/80 backdrop-blur-md shadow-primary"
+          ? "bg-background/80 backdrop-blur-md shadow-primary border-b border-border/50"
           : "bg-transparent"
       }`}
     >
@@ -35,10 +36,11 @@ const Navigation = () => {
           </div>
 
           <div className="flex items-center gap-4">
+            <ThemeToggle />
             <Button variant="outline-primary" size="default">
               Sign In
             </Button>
-            <Button variant="hero" size="default" className="animate-scale-in">
+            <Button variant="hero" size="default">
               Get Started
             </Button>
           </div>
