@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
 const CTASection = () => {
@@ -19,12 +20,11 @@ const CTASection = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-smooth-rise">
-          <Button variant="hero" size="xl" className="group animate-subtle-glow">
-            Start Learning Today
-            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+          <Button variant="hero" size="xl" className="animate-smooth-rise" asChild>
+            <Link to="/courses">Get Started Today</Link>
           </Button>
-          <Button variant="outline-primary" size="xl">
-            View Courses
+          <Button variant="outline-primary" size="xl" asChild>
+            <Link to="/courses">View Courses</Link>
           </Button>
         </div>
 

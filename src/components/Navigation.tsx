@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -40,8 +41,8 @@ const Navigation = () => {
             <Button variant="outline-primary" size="default">
               Sign In
             </Button>
-            <Button variant="hero" size="default">
-              Get Started
+            <Button variant="hero" size="default" asChild>
+              <Link to="/courses">Get Started</Link>
             </Button>
           </div>
         </div>

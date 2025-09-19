@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -29,12 +30,8 @@ const HeroSection = () => {
           </p>
 
           <div className="pt-8">
-            <Button 
-              variant="hero" 
-              size="xl" 
-              className="animate-subtle-glow hover:animate-none transition-all duration-500"
-            >
-              Start Learning Today
+            <Button variant="hero" size="xl" className="animate-smooth-rise" asChild>
+              <Link to="/courses">Get Started</Link>
             </Button>
           </div>
         </div>
