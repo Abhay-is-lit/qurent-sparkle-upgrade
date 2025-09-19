@@ -175,12 +175,6 @@ const Courses = () => {
         </div>
       </div>
     </div>
-    <iframe>
-      src="https://www.chatbase.co/chatbot-iframe/oMKwLxgGg4Nv7y-U-3lzq"
-      width="100%"
-      style="height: 100%; min-height: 700px"
-      frameborder="0"
-    </iframe>
   );
 };
 
