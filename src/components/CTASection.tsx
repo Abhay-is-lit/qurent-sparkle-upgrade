@@ -21,7 +21,7 @@ const CTASection = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-smooth-rise">
           <Button variant="hero" size="xl" className="animate-smooth-rise" asChild>
-            <Link to="/courses">Get Started Today</Link>
+            <Link to="/home">Get Started Today</Link>
           </Button>
           <Button variant="outline-primary" size="xl" asChild>
             <Link to="/courses">View Courses</Link>

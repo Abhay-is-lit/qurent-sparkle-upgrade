@@ -31,7 +31,7 @@ const HeroSection = () => {
 
           <div className="pt-8">
             <Button variant="hero" size="xl" className="animate-smooth-rise" asChild>
-              <Link to="/courses">Get Started</Link>
+              <Link to="/home">Get Started</Link>
             </Button>
           </div>
         </div>

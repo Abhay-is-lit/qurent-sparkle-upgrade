@@ -36,13 +36,27 @@ const Navigation = () => {
             </h1>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-6">
+            <nav className="hidden md:flex items-center gap-6">
+              <Link 
+                to="/home" 
+                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Home
+              </Link>
+              <Link 
+                to="/courses" 
+                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Courses
+              </Link>
+            </nav>
             <ThemeToggle />
             <Button variant="outline-primary" size="default">
               Sign In
             </Button>
             <Button variant="hero" size="default" asChild>
-              <Link to="/courses">Get Started</Link>
+              <Link to="/home">Get Started</Link>
             </Button>
           </div>
         </div>
